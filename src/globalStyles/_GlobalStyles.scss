@@ -1,0 +1,227 @@
+/* Font face */
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-TTF/Lato-Thin.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-TTF/Lato-Light.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-TTF/Lato-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-TTF/Lato-Medium.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-TTF/Lato-Semibold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 600;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-TTF/Lato-Bold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-TTF/Lato-Black.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 800;
+}
+
+/* Font family */
+$--FontFamily: 'Lato', sans-serif;
+
+// Font
+@mixin Font($fontSize, $lineHeight, $fontWeight) {
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	font-weight: $fontWeight;
+}
+
+@mixin Headline1 {
+	@include Font(78px, 98px, 800);
+}
+
+@mixin Headline2() {
+	@include Font(48px, 64px, 800);
+}
+
+@mixin Headline3() {
+	@include Font(40px, 54px, 800);
+}
+
+@mixin Headline4() {
+	@include Font(28px, 40px, 800);
+}
+
+@mixin Headline5() {
+	@include Font(24px, 32px, 600);
+}
+
+@mixin Headline6() {
+	@include Font(20px, 32px, 500);
+}
+
+@mixin Subtitle1 {
+	@include Font(18px, 28px, 700);
+}
+
+@mixin Subtitle2 {
+	@include Font(18px, 28px, 600);
+}
+
+@mixin Subtitle3 {
+	@include Font(16px, 28px, 500);
+}
+
+@mixin Lead1 {
+	@include Font(18px, 32px, 400);
+}
+
+@mixin Lead2 {
+	@include Font(14px, 24px, 600);
+}
+
+@mixin Body1 {
+	@include Font(18px, 26px, 400);
+}
+
+@mixin Body2 {
+	@include Font(14px, 22px, 400);
+}
+
+@mixin LargeLabel {
+	@include Font(20px, 30px, 600);
+}
+
+@mixin LargeLabe2 {
+	@include Font(14px, 20px, 600);
+}
+
+@mixin LargeLabe3 {
+	@include Font(12px, 16px, 600);
+}
+
+@mixin Capitalised {
+	@include Font(14px, 18px, 800);
+	letter-spacing: 1px;
+	text-transform: capitalize;
+}
+
+@mixin BadgeLabel {
+	@include Font(20px, 25px, 400);
+}
+
+/* Colors */
+$--PrincipalBackgroundColor: #f9f9f9;
+
+$--TextPrincipalColor: #000;
+$--TextSecondaryColor: rgb(184, 164, 164);
+$--TextTertiaryColor: rgb(197, 136, 136);
+
+$--PrimaryColor1: #d75e72;
+$--PrimaryColor2: #db6e80;
+$--PrimaryColor3: #df7e8e;
+$--PrimaryColor4: #e38e9c;
+$--PrimaryColor5: #e79eaa;
+$--PrimaryColor6: #ebafb9;
+
+$--SecondaryColor1: #11161a;
+$--SecondaryColor2: #232e36;
+$--SecondaryColor3: #364652;
+$--SecondaryColor4: #485e6f;
+$--SecondaryColor5: #5b768b;
+$--SecondaryColor6: #728da3;
+
+$--ErrorColor1: #870e1e;
+$--ErrorColor2: #a01325;
+$--ErrorColor3: #b81b30;
+$--ErrorColor4: #cd273d;
+$--ErrorColor5: #dd384e;
+$--ErrorColor6: #e95065;
+
+$--WarningColor1: #87770e;
+$--WarningColor2: #a08d13;
+$--WarningColor3: #b8a31b;
+$--WarningColor4: #cdb627;
+$--WarningColor5: #ddc738;
+$--WarningColor6: #e9d550;
+
+$--SuccessColor1: #5b870e;
+$--SuccessColor2: #6ca013;
+$--SuccessColor3: #7eb81b;
+$--SuccessColor4: #90cd27;
+$--SuccessColor5: #a1dd38;
+$--SuccessColor6: #b1e950;
+
+$--NeutralColor1: #111827;
+$--NeutralColor2: #1f2937;
+$--NeutralColor3: #374151;
+$--NeutralColor4: #4b5563;
+$--NeutralColor5: #6b7280;
+$--NeutralColor6: #9ca3af;
+
+$--AccentColor1: #c1e5c0;
+$--AccentColor2: #c0dae5;
+$--AccentColor3: #fdd9d9;
+$--AccentColor4: #ffc3d8;
+$--AccentColor5: #a0dcff;
+$--AccentColor6: #d9e8ef;
+
+/* Border */
+$--PrincipalBorder: 0.5px solid rgba(0, 0, 0, 0.05);
+
+/* Border Radious */
+$--PrincipalBorderRadius: 5px;
+$--SecondaryBorderRadius: 10px;
+$--TertiaryBorderRadius: 15px;
+
+/* Padding */
+$--PrincipalPadding: 5px;
+$--SecondaryPadding: 10px;
+$--TertiaryPadding: 15px;
+
+/* Margin */
+$--PrincipalMargin: 5px;
+$--SecondaryMargin: 10px;
+$--TertiaryMargin: 15px;
+
+/* Box shadow */
+$--PrincipalBoxShadow: 1px 1px 7px rgb(0, 0, 0, 0.3);
+$--SecondaryBoxShadow: 2px 2px 7px rgb(0, 0, 0, 0.3);
+$--TertiaryBoxShadow: 3px 3px 7px rgb(0, 0, 0, 0.3);
+
+/* Gap */
+$--PrincipalGap: 5px;
+$--SecondaryGap: 10px;
+$--TertiaryGap: 15px;
+
+/* Row gap */
+$--PrincipalRowGap: 1rem;
+$--SecondaryRowGap: 2rem;
+$--TertiaryRowGap: 3rem;
+
+/* Column gap */
+$--PrincipalColumnGap: 1rem;
+$--SecondaryColumnGap: 2rem;
+$--TertiaryColumnGap: 3rem;

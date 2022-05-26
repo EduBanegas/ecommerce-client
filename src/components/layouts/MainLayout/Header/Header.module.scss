@@ -1,0 +1,9 @@
+@import '../../../../globalStyles/GlobalStyles';
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    min-width: 100%;
+}
